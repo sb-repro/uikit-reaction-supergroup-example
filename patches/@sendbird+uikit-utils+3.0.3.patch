@@ -1,0 +1,13 @@
+diff --git a/node_modules/@sendbird/uikit-utils/src/sendbird/message.ts b/node_modules/@sendbird/uikit-utils/src/sendbird/message.ts
+index 46010dc..b82dac8 100644
+--- a/node_modules/@sendbird/uikit-utils/src/sendbird/message.ts
++++ b/node_modules/@sendbird/uikit-utils/src/sendbird/message.ts
+@@ -124,7 +124,7 @@ export function shouldRenderReaction(channel: SendbirdBaseChannel, reactionEnabl
+ 
+   if (channel.isGroupChannel()) {
+     if (channel.isBroadcast) return false;
+-    if (channel.isSuper) return false;
++    // if (channel.isSuper) return false;
+     if (channel.isEphemeral) return false;
+   }
+ 
